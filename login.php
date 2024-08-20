@@ -1,3 +1,7 @@
+<?php
+session_start();
+$dev = "SAM OCHU";
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
