@@ -1,5 +1,10 @@
 <?php
-$dev = "SAM OCHU";
+session_sart();
+
+if (isset($_SESSION['uid])) {
+   header("location: home.php");
+   exit;
+}
 ?>
 <!DOCTYPE html>
 <html lang="en">
