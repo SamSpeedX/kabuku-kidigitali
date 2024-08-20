@@ -1,3 +1,6 @@
+<?php
+$dev = "SAM OCHU";
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
