@@ -1,0 +1,430 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #001031;
+}
+
+/* my header */
+header {
+    background-color: #010b1f9d;
+    border-bottom: 0.1rem solid rgba(255, 255, 255, 0.247);
+    width: 100%;
+    height: 4.5rem;
+    display: flex;
+    place-items: center;
+    justify-content: space-between;
+    position: fixed;
+}
+
+.logo {
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: large;
+    margin: 3rem;
+    font-style: oblique;
+    cursor: pointer;
+}
+
+nav {
+    margin: 3rem;
+}
+
+nav ul li{
+    display: inline-block;
+}
+
+nav ul li a {
+    text-decoration: none;
+    margin-left: 5rem;
+    list-style: none;
+    color: white;
+}
+
+.action-btn {
+    display: flex;
+    place-content: center;
+    margin: 3rem;
+    color: white;
+}
+
+.login {
+    margin-right: 3rem;
+    cursor: pointer;
+}
+.register {
+    cursor: pointer;
+}
+
+/* my hero */
+.hero {
+    background-image: url(../img/tv.jpg);
+    background-position: center;
+}
+
+.hero .container {
+    width: 100%;
+    height: 100dvh;
+    display: flex;
+    place-items: center;
+    justify-content: center;
+}
+
+.hero .container .content {
+    width: 100%;
+    height: 100%;
+    background-color: #6193f744;
+    display: grid;
+    place-items: center;
+    justify-content: center;
+}
+
+.hero .container .content p,.hero .container .content h3 {
+    margin: 3rem;
+}
+
+
+/* Dashboard */
+.side-bar {
+    width: 20%;
+    height: 100dvh;
+    color: white;
+    background-color: #010b1f9d;
+    position: relative;
+}
+
+.side-bar .container, .side-bar .container .content {
+    width: 100%;
+    display: grid;
+    place-items: center;
+    justify-content: center;
+}
+
+.pro-pic img {
+    width: 5rem;
+    height: 5rem;
+    margin-top: 3rem;
+    border-radius: 50%;
+}
+
+.dash-link {
+    width: 80%;
+    margin-top: 5rem;
+}
+
+.dash-link ul li {
+    display: block;
+}
+
+.dash-link ul div {
+    color: white;
+    margin-top: 2rem;
+    text-decoration: none;
+    background-color: #0332919a;
+    width: 100%;
+    height: 3rem;
+    cursor: pointer;
+    display: flex;
+    padding-left: 5rem;
+    padding-right: 5rem;
+    place-items: center;
+    justify-content: center;
+    border-radius: 0.7rem;
+}
+
+main {
+    width: 70%;
+    height: 80dvh;
+    top: 0;
+    margin-left: 19rem;
+    margin-top: 5rem;
+    position: absolute;
+    background-color: rgba(41, 31, 68, 0.329);
+    border-radius: 0.9rem;
+    border: 0.1rem solid rgba(116, 116, 116, 0.685);
+}
+
+main .container, main .content{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    place-items: center;
+    justify-content: center;
+    align-items: center;
+}
+
+main .container .content .flexer {
+    width: 90%;
+    height: 40%;
+    display: flexbox;
+    place-items: center;
+    justify-content: space-between;
+    margin-bottom: 8rem;
+}
+
+.profile-views {
+    width: 70%;
+    height: 50%;
+    border-radius: 0.5rem;
+    border: 0.1rem solid white;
+    color: white;
+    margin-right: 0.5rem;
+    margin-left: 0.5rem;
+    margin-bottom: 3rem;
+    margin-left: 1.6rem;
+    background-color: #001031;
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+    place-items: center;
+}
+
+.dash-jina {
+    margin-top: 1rem;
+}
+
+
+
+/* register form */
+/* bussness */
+.bs-register-form {
+    width: 100%;
+    height: 115dvh;
+}
+
+.bs-register-form .container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    place-items: center;
+}
+
+.bs-register-form .container .content {
+    color: white;
+    background-color: rgba(2, 42, 70, 0.322);
+    width: 40%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    place-items: center;
+    border-radius: 1rem;
+    border-top-left-radius: 0;
+    border-bottom-right-radius: 0;
+    border: 0.1rem solid white;
+}
+
+.log-register-form {
+    width: 100%;
+    height: 100dvh;
+}
+
+.log-register-form .container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    place-items: center;
+}
+
+.log-register-form .container .content {
+    color: white;
+    background-color: rgba(2, 42, 70, 0.322);
+    width: 40%;
+    height: 60%;
+    display: flex;
+    justify-content: center;
+    place-items: center;
+    border-radius: 1rem;
+    border-top-left-radius: 0;
+    border-bottom-right-radius: 0;
+    border: 0.1rem solid white;
+}
+
+.register-form {
+    width: 100%;
+    height: 100dvh;
+}
+
+.register-form .container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    place-items: center;
+}
+
+.register-form .container .content {
+    color: white;
+    background-color: rgba(2, 42, 70, 0.322);
+    width: 40%;
+    height: 90%;
+    display: flex;
+    justify-content: center;
+    place-items: center;
+    border-radius: 1rem;
+    border-top-left-radius: 0;
+    border-bottom-right-radius: 0;
+    border: 0.1rem solid white;
+}
+
+.wrap {
+    width: 100%;
+    margin-top: 1rem;
+
+}
+
+.wrap .box {
+    width: 100%;
+    border: 2px solid white;
+    border-radius: 0.5rem;
+    margin-top: 0.3rem;
+}
+
+.wrap .box1 {
+    width: 100%;
+    border: 2px solid rgb(250, 250, 250);
+    border-radius: 0.5rem;
+    background-color: white;
+}
+
+.wrap .box input {
+    width: 100%;
+    height: 2.5rem;
+    padding: 1rem;
+    border: none;
+    background-color: white;
+    outline: none;
+    font-size: 1rem;
+}
+
+.bs-register-form .wrap .box input[type='text'] {
+    text-transform: uppercase;
+}
+
+.wrap .box .select {
+    width: 100%;
+    height: 2.5rem;
+    /* padding: 1rem; */
+    border: none;
+    background-color: white;
+    outline: none;
+    font-size: 1rem;
+}
+
+.wrap .box1 .cod {
+    width: 25%;
+    height: 2rem;
+    outline: none;
+    border: none;
+}
+
+.wrap .box1 input[type='tel'] {
+    width: 73%;
+    height: 2.5rem;
+    padding: 1rem;
+    padding-right: 0.2rem;
+    background-color: white;
+    margin-right: 0;
+    outline: none;
+    border: none;
+    font-size: 1rem;
+}
+
+.wrap a {
+    color: white;
+}
+
+.reg-btn1 {
+    width: 100%;
+    background-color: #001031;
+    margin-top: 1rem;
+    height: 2.5rem;
+    color: white;
+    border-radius: 0.5rem;
+    border: 0.1rem solid white;
+}
+
+.link {
+    width: 100%;
+    margin-top: 2rem;
+}
+
+.link .log-in {
+    margin-bottom: 1rem;
+}
+
+.link a {
+    color: white;
+}
+
+.forget a {
+    color: white;
+}
+
+/* terms */
+.terms-t {
+    color: rgb(202, 191, 252);
+    margin: 5rem;
+    padding-top: 5rem;
+}
+
+/* Main content styling */
+.terms-t {
+    max-width: 800px;
+    margin: 20px auto;
+    background: #340163;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+h3 {
+    color: #1c8dfd;
+    margin: 20px 0 10px;
+}
+
+p {
+    margin-bottom: 15px;
+}
+
+ul {
+    margin-left: 20px;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
+/* Footer styling */
+.footer {
+    text-align: center;
+    margin: 20px 0;
+    padding: 10px 0;
+    background-color: #1e3c64;
+    color: #fff;
+}
+
+.footer p {
+    margin: 0;
+}
+
+/* Links in footer */
+.footer a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
