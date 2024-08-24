@@ -1,22 +1,16 @@
 <?php
 session_start();
-if (!isset($_SESSION['uid'])) {
-    header("location: index.php");
-    exit;
-}
 
-if ($_SESSION['aina'] == "bussness") {
-    header("location: dashboard.php");
-    exit;
-}
-require_once './server/profile.php';
+require './config/app.php';
+
+require 'server/profile.php';
 ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>KABUKU KIDIGITALI</title>
+    <title><?php echo APP_NAME; ?></title>
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
@@ -51,7 +45,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             </p>
             </div>
             <div class="flex">
-            <button type="submit" onclick="window.location.href='profile.php'" class="edit-account">No</button>
+            <button type="submit" onclick="window.location.href='profile'" class="edit-account">No</button>
             <form action="server/delete.php" method="post">
                 <input type="hidden" name="delete" id="delete" value="<?php echo $delete; ?>">
                 <button type="submit" class="delete-account">Yes</button>
@@ -81,7 +75,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                         </form>
                     </div>
                     <?php
-                     mysqli_close($unga);
+                    //  mysqli_close($unga);
                     ?>
                 </div>
             </div>

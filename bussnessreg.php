@@ -1,20 +1,25 @@
 <?php
-$dev = "SAM OCHU";
+require './config/config.php';
 ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>REGISTRATION | KABUKU KIDIGITALI</title>
+    <title>REGISTRATION | <?php echo APP_NAME; ?></title>
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
     <div class="bs-register-form">
         <div class="container">
             <div class="content">
-                <form action="login.php" method="post" id="client">
+                <form action="bussnessreg.php" method="post" id="client">
                     <h3>Bussness Registration.</h3>
+                    <?php
+                    if (isset($error)) {
+                     echo $error;
+                    }
+                    ?>
                     <div class="wrap">
                         <label for="name">Name</label>
                         <div class="box">
@@ -32,7 +37,7 @@ $dev = "SAM OCHU";
                     <div class="wrap">
                         <label for="nida">Nida ( security reason only )</label>
                         <div class="box">
-                            <input type="number" name="email" id="nida" placeholder="Your nida here.">
+                            <input type="number" name="nida" id="nida" placeholder="Your nida here.">
                         </div>
                     </div>
     
@@ -85,7 +90,7 @@ $dev = "SAM OCHU";
 
                     <div class="link">
                         <div class="log-in">
-                            I have account <a href="login.php">login</a>
+                            I have account <a href="login">login</a>
                         </div>
                     </div>
                 </form>

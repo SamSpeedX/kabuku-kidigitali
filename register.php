@@ -1,6 +1,6 @@
 <?php
-session_start();
-$dev = "SAM OCHU";
+require './config/app.php';
+require_once 'server/register.php';
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -14,12 +14,17 @@ $dev = "SAM OCHU";
     <div class="register-form">
         <div class="container">
             <div class="content">
-                <form action="login.html" method="post" id="client">
+                <form action="register.php" method="post" id="client">
                     <h3>Client Registration.</h3>
+                    <?php
+                    if (isset($error)) {
+                     echo $error;
+                    }
+                    ?>
                     <div class="wrap">
                         <label for="name">Name</label>
                         <div class="box">
-                            <input type="text" name="name" class="capital-letter" id="name" placeholder="Your name here.">
+                            <input type="text" name="name" class="capital-letter" id="name" placeholder="Your name here." minlength="3">
                         </div>
                     </div>
     
@@ -36,14 +41,14 @@ $dev = "SAM OCHU";
                             <select name="cod" id="cod" class="cod">
                                 <option value="+255">+255</option>
                             </select>
-                            <input type="tel" name="number" id="name" placeholder="Your number here.">
+                            <input type="tel" name="number" maxlength="10" minlength="10" id="name" placeholder="Your number here.">
                         </div>
                     </div>
     
                     <div class="wrap">
                         <label for="password">password</label>
                         <div class="box">
-                            <input type="password" name="password" id="password" placeholder="Your password here.">
+                            <input type="password" name="password" minlength="6" maxlength="8" id="password" placeholder="Your password here.">
                         </div>
                     </div>
     
@@ -59,10 +64,10 @@ $dev = "SAM OCHU";
 
                     <div class="link">
                         <div class="log-in">
-                            I have account <a href="login.html">login</a>
+                            I have account <a href="login.php">login</a>
                         </div> 
                         <div class="buss">
-                            <p>Create <a href="bussnessreg.html">Bussness Account</a></p>
+                            <p>Create <a href="bussnessreg.php">Bussness Account</a></p>
                         </div>
                     </div>
     

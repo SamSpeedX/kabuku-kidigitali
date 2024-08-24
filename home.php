@@ -5,6 +5,16 @@ if (!isset($_SESSION['uid'])) {
     header("location: index.php");
     exit;
 }
+
+if ($_SESSION['aina'] == "bussness") {
+    $a_url = "dashboard.php";
+    $a_name = "dashboard";
+}
+
+if ($_SESSION['aina'] == "") {
+    $a_url = "cart.php";
+    $a_name = "cart";
+}
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -21,8 +31,8 @@ if (!isset($_SESSION['uid'])) {
             <div class="content">
                 <ul>
                     <li><a href="#hero">Home</a></li>
-                    <li><a href="#categories">Categories</a></li>
                     <li><a href="#product">Product</a></li>
+                    <li><a href="<?php echo $a_url; ?>"><?php echo $a_name; ?></a></li>
                 </ul>
             </div>
         </nav>

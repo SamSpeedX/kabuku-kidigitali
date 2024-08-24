@@ -1,5 +1,15 @@
 <?php
-$dev = "SAM OCHU";
+session_start();
+
+if (!isset($_SESSION['uid'])) {
+    header("location: index.php");
+    exit;
+}
+
+if ($_SESSION['aina'] == '') {
+    header("location: profile.php");
+    exit;
+}
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -24,11 +34,11 @@ $dev = "SAM OCHU";
     
                     <div class="dash-link">
                         <ul>
-                            <div onclick="window.location.href='#dashoard'">Dashboard</div>
-                            <div onclick="window.location.href='#product'">Products</div>
-                            <div onclick="window.location.href='#profile'">Profile</div>
-                            <div onclick="window.location.href='#'">report problem</div>
-                            <div onclick="window.location.href='login.html'">Logout</div>
+                            <div onclick="window.location.href='index.php#dashoard'">Dashboard</div>
+                            <div onclick="window.location.href='index.php#product'">Products</div>
+                            <div onclick="window.location.href='profile.php'">Profile</div>
+                            <div onclick="window.location.href='report.php'">report problem</div>
+                            <div onclick="window.location.href='login.php'">Logout</div>
                         </ul>
                     </div>
                 </div>

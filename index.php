@@ -1,17 +1,18 @@
 <?php
-session_sart();
+session_start();
 
-if (isset($_SESSION['uid])) {
-   header("location: home.php");
-   exit;
+if (isset($_SESSION['uid'])) {
+    header("location: home.php");
+    exit;
 }
+require './config/config.php'
 ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>KABUKU KIDIGITALI</title>
+    <title> <?php echo APP_NAME; ?> </title>
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
@@ -21,7 +22,6 @@ if (isset($_SESSION['uid])) {
             <div class="content">
                 <ul>
                     <li><a href="#hero">Home</a></li>
-                    <li><a href="#categories">Categories</a></li>
                     <li><a href="#product">Product</a></li>
                 </ul>
             </div>
