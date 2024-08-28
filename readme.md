@@ -1,7 +1,7 @@
 <h2>Hello world.</h2>
 <p>
 my name is <strong>SAM OCHU</strong>. <br>
-I'm student from TANZANIA dealing with backend web development based on php stack.
+I'm student from TANZANIA dealing with backend web development based on MySQL and php stack.
 </p>
 
 ---
