@@ -8,9 +8,9 @@ require __DIR__ . '/vendor/autoload.php'; // Load Composer's autoloader
 use Twilio\Rest\Client;
 
 // Twilio credentials
-$account_sid = 'AC54d6bc51e72e6c64c24c7e4cb8d1bf3f'; 
-$auth_token = 'ad093bc29e7be35177378682819f7a0b'; 
-$twilio_phone_number = '+12082619950'; 
+$account_sid = ''; 
+$auth_token = ''; 
+$twilio_phone_number = ''; 
 
 $client = new Client($account_sid, $auth_token);
 
