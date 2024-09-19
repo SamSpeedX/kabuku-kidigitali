@@ -1,0 +1,187 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.error {
+    color: red;
+}
+
+/* register form */
+/* bussness */
+.bs-register-form {
+    margin-top: 1rem;
+    width: 100%;
+    height: 55rem;
+}
+
+.bs-register-form .container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    place-items: center;
+}
+
+.bs-register-form .container .content {
+    color: white;
+    background-color: rgba(2, 42, 70, 0.322);
+    width: 40%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    place-items: center;
+    border-radius: 1rem;
+    border-top-left-radius: 0;
+    border-bottom-right-radius: 0;
+    border: 0.1rem solid white;
+}
+
+.log-register-form {
+    width: 100%;
+    height: 100dvh;
+}
+
+.log-register-form .container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    place-items: center;
+}
+
+.log-register-form .container .content {
+    color: white;
+    background-color: rgba(2, 42, 70, 0.322);
+    width: 40%;
+    height: 60%;
+    display: flex;
+    justify-content: center;
+    place-items: center;
+    border-radius: 1rem;
+    border-top-left-radius: 0;
+    border-bottom-right-radius: 0;
+    border: 0.1rem solid white;
+}
+
+.register-form {
+    width: 100%;
+    height: 100dvh;
+}
+
+.register-form .container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    place-items: center;
+}
+
+.register-form .container .content {
+    color: white;
+    background-color: rgba(2, 42, 70, 0.322);
+    width: 40%;
+    height: 90%;
+    display: flex;
+    justify-content: center;
+    place-items: center;
+    border-radius: 1rem;
+    border-top-left-radius: 0;
+    border-bottom-right-radius: 0;
+    border: 0.1rem solid white;
+}
+
+.wrap {
+    width: 100%;
+    margin-top: 1rem;
+
+}
+
+.wrap .box {
+    width: 100%;
+    border: 2px solid white;
+    border-radius: 0.5rem;
+    margin-top: 0.3rem;
+}
+
+.wrap .box1 {
+    width: 100%;
+    border: 2px solid rgb(250, 250, 250);
+    border-radius: 0.5rem;
+    background-color: white;
+}
+
+.wrap .box input {
+    width: 100%;
+    height: 2.5rem;
+    padding: 1rem;
+    border: none;
+    background-color: white;
+    outline: none;
+    font-size: 1rem;
+}
+
+.bs-register-form .wrap .box input[type='text'] {
+    text-transform: uppercase;
+}
+
+.wrap .box .select {
+    width: 100%;
+    height: 2.5rem;
+    /* padding: 1rem; */
+    border: none;
+    background-color: white;
+    outline: none;
+    font-size: 1rem;
+}
+
+.wrap .box1 .cod {
+    width: 25%;
+    height: 2rem;
+    outline: none;
+    border: none;
+}
+
+.wrap .box1 input[type='tel'] {
+    width: 73%;
+    height: 2.5rem;
+    padding: 1rem;
+    padding-right: 0.2rem;
+    background-color: white;
+    margin-right: 0;
+    outline: none;
+    border: none;
+    font-size: 1rem;
+}
+
+.wrap a {
+    color: white;
+}
+
+.reg-btn1 {
+    width: 100%;
+    background-color: #001031;
+    margin-top: 1rem;
+    height: 2.5rem;
+    color: white;
+    border-radius: 0.5rem;
+    border: 0.1rem solid white;
+}
+
+.link {
+    width: 100%;
+    margin-top: 2rem;
+}
+
+.link .log-in {
+    margin-bottom: 1rem;
+}
+
+.link a {
+    color: white;
+}
+
+.forget a {
+    color: white;
+}
