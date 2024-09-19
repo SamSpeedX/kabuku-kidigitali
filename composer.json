@@ -1,6 +1,6 @@
 {
     "require": {
-        "guzzlehttp/guzzle": "^7.9",
-        "zenopay/zenopay-php": "^1.0"
+        "twilio/sdk": "^8.3",
+        "vlucas/phpdotenv": "^5.6"
     }
 }
